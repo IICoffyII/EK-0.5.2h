@@ -155,6 +155,14 @@ class FlxHitbox extends FlxSpriteGroup {
                 hitbox.add(add(k9 = createhitbox(928, 0, "k9")));
                 hitbox.add(add(k10 = createhitbox(1044, 0, "k10"))); 
                 hitbox.add(add(k11 = createhitbox(1160, 0, "k11"))); 
+	    case default:
+                hitbox_hint.loadGraphic(Paths.image('androidcontrols/hitbox/4k_hint'));
+
+                hitbox.add(add(k1 = createhitbox(0, 0, "k1")));
+                hitbox.add(add(k2 = createhitbox(320, 0, "k2")));
+                hitbox.add(add(k3 = createhitbox(640, 0, "k3")));
+                hitbox.add(add(k4 = createhitbox(960, 0, "k4")));
+	 	
         }
 
         array = [k1, k2, k3, k4, k5, k6, k7, k8, k9, k10, k11];
@@ -200,6 +208,9 @@ class FlxHitbox extends FlxSpriteGroup {
                 Paths.getSparrowAtlas('androidcontrols/hitbox/10k');
             case ELEVEN:
                 Paths.getSparrowAtlas('androidcontrols/hitbox/11k');
+	    case default:
+                Paths.getSparrowAtlas('androidcontrols/hitbox/4k');
+		
         }
     }
 
